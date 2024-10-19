@@ -1,5 +1,4 @@
 import { Map, Earth } from "lucide-react";
-
 import {
     Sidebar,
     SidebarContent,
@@ -10,37 +9,38 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { Link } from "react-router-dom";
 
 // Menu items.
 const items = [
     {
         title: "Delhi",
-        url: "#",
+        url: "./Delhi",
         icon: Map,
     },
     {
         title: "Mumbai",
-        url: "#",
+        url: "./Mumbai",
         icon: Earth,
     },
     {
         title: "Chennai",
-        url: "#",
+        url: "./Chennai",
         icon: Map,
     },
     {
         title: "Bangalore",
-        url: "#",
+        url: "./Bangalore",
         icon: Earth,
     },
     {
         title: "Kolkata",
-        url: "#",
+        url: "./Kolkata",
         icon: Map,
     },
     {
         title: "Hyderabad",
-        url: "#",
+        url: "./Hyderabad",
         icon: Earth,
     },
 ];
@@ -56,10 +56,10 @@ export function AppSidebar() {
                             {items.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton asChild>
-                                        <a href={item.url}>
-                                            <item.icon />
+                                        <Link to={item.url}>
+                                            <item.icon />{" "}
                                             <span>{item.title}</span>
-                                        </a>
+                                        </Link>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
                             ))}
