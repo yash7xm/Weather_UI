@@ -1,6 +1,11 @@
 import "./weather-card.css";
+import { useParams } from "react-router-dom";
 
 export function WeatherCard() {
+    const { city } = useParams();
+
+    console.log(city);
+
     return (
         <div className="cardm">
             <div className="card">

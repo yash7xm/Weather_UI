@@ -15,32 +15,32 @@ import { Link } from "react-router-dom";
 const items = [
     {
         title: "Delhi",
-        url: "./Delhi",
+        url: "http://localhost:5173/Delhi",
         icon: Map,
     },
     {
         title: "Mumbai",
-        url: "./Mumbai",
+        url: "http://localhost:5173/Mumbai",
         icon: Earth,
     },
     {
         title: "Chennai",
-        url: "./Chennai",
+        url: "http://localhost:5173/Chennai",
         icon: Map,
     },
     {
         title: "Bangalore",
-        url: "./Bangalore",
+        url: "http://localhost:5173/Bangalore",
         icon: Earth,
     },
     {
         title: "Kolkata",
-        url: "./Kolkata",
+        url: "http://localhost:5173/Kolkata",
         icon: Map,
     },
     {
         title: "Hyderabad",
-        url: "./Hyderabad",
+        url: "http://localhost:5173/Hyderabad",
         icon: Earth,
     },
 ];
