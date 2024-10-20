@@ -13,7 +13,7 @@ export function WeatherCard() {
             setLoading(true);
             try {
                 const res = await fetch(
-                    `http://localhost:8080/api/weather/current?city=${city}`
+                    `https://weather-monitoring-system-dpv9.onrender.com/api/weather/current?city=${city}`
                 );
                 if (!res.ok) {
                     throw new Error("Failed to fetch data");

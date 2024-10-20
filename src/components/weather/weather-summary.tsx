@@ -48,7 +48,7 @@ export function WeatherSummary({ className, ...props }: CardProps) {
                     : "";
 
                 const res = await fetch(
-                    `http://localhost:8080/api/weather/summary?city=${city}&date=${dateString}`
+                    `https://weather-monitoring-system-dpv9.onrender.com/api/weather/summary?city=${city}&date=${dateString}`
                 );
 
                 if (!res.ok) {
@@ -56,7 +56,6 @@ export function WeatherSummary({ className, ...props }: CardProps) {
                 }
 
                 const result = await res.json();
-                console.log(result);
                 setData(result);
             } catch (error: any) {
                 console.log(error.message);
