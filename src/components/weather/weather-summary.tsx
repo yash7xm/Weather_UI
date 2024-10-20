@@ -31,7 +31,11 @@ export function WeatherSummary({ className, ...props }: CardProps) {
         ? `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
         : "Select a date";
 
-    const { city } = useParams();
+    let { city } = useParams();
+
+    if (!city) {
+        city = "Delhi";
+    }
 
     useEffect(() => {
         const fetchData = async () => {

@@ -3,7 +3,11 @@ import "./weather-card.css";
 import { useParams } from "react-router-dom";
 
 export function WeatherCard() {
-    const { city } = useParams();
+    let { city } = useParams();
+
+    if (!city) {
+        city = "Delhi";
+    }
 
     const [data, setData] = useState<any>({});
     const [loading, setLoading] = useState<boolean>(true);

@@ -15,32 +15,32 @@ import { Link } from "react-router-dom";
 const items = [
     {
         title: "Delhi",
-        url: "http://localhost:5173/Delhi",
+        url: "https://weather-ui-r7xp.vercel.app/Delhi",
         icon: Map,
     },
     {
         title: "Mumbai",
-        url: "http://localhost:5173/Mumbai",
+        url: "https://weather-ui-r7xp.vercel.app/Mumbai",
         icon: Earth,
     },
     {
         title: "Chennai",
-        url: "http://localhost:5173/Chennai",
+        url: "https://weather-ui-r7xp.vercel.app/Chennai",
         icon: Map,
     },
     {
         title: "Bangalore",
-        url: "http://localhost:5173/Bangalore",
+        url: "https://weather-ui-r7xp.vercel.app/Bangalore",
         icon: Earth,
     },
     {
         title: "Kolkata",
-        url: "http://localhost:5173/Kolkata",
+        url: "https://weather-ui-r7xp.vercel.app/Kolkata",
         icon: Map,
     },
     {
         title: "Hyderabad",
-        url: "http://localhost:5173/Hyderabad",
+        url: "https://weather-ui-r7xp.vercel.app/Hyderabad",
         icon: Earth,
     },
 ];
