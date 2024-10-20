@@ -24,7 +24,17 @@ cd Rule_Engine_UI
 2. Install dependencies:
    `npm install`
 
-3. Run the development server:
+3. Environment Variables
+   In order to run the frontend locally, you need to create an `.env` file in the root of the project directory to configure the environment variables. The project requires both **_Frontend_** and **_Backend_** URLs.
+    ##### Create `.env` File
+    In the root directory of your project, create a file called .env and add the following variables:
+
+```
+VITE_FRONTEND_URL=http://localhost:5173
+VITE_BACKEND_URL=http://localhost:8080
+```
+
+4. Run the development server:
    `npm run dev`
 
 ### Deployment Notes
