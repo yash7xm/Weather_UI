@@ -26,6 +26,7 @@ export function WeatherSummary({ className, ...props }: CardProps) {
     const [date, setDate] = useState<Date | undefined>(new Date());
     const [loading, setLoading] = useState<boolean>(true);
     const [data, setData] = useState<any>({});
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
     const formattedDate = date
         ? `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
@@ -52,7 +53,7 @@ export function WeatherSummary({ className, ...props }: CardProps) {
                     : "";
 
                 const res = await fetch(
-                    `https://weather-monitoring-system-dpv9.onrender.com/api/weather/summary?city=${city}&date=${dateString}`
+                    `${backendUrl}/api/weather/summary?city=${city}&date=${dateString}`
                 );
 
                 if (!res.ok) {

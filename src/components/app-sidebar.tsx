@@ -11,36 +11,37 @@ import {
 } from "@/components/ui/sidebar";
 import { Link } from "react-router-dom";
 
+const frontendUrl = import.meta.env.VITE_FRONTEND_URL;
 // Menu items.
 const items = [
     {
         title: "Delhi",
-        url: "https://weather-ui-r7xp.vercel.app/Delhi",
+        url: `${frontendUrl}/Delhi`,
         icon: Map,
     },
     {
         title: "Mumbai",
-        url: "https://weather-ui-r7xp.vercel.app/Mumbai",
+        url: `${frontendUrl}/Mumbai`,
         icon: Earth,
     },
     {
         title: "Chennai",
-        url: "https://weather-ui-r7xp.vercel.app/Chennai",
+        url: `${frontendUrl}/Chennai`,
         icon: Map,
     },
     {
         title: "Bangalore",
-        url: "https://weather-ui-r7xp.vercel.app/Bangalore",
+        url: `${frontendUrl}/Bangalore`,
         icon: Earth,
     },
     {
         title: "Kolkata",
-        url: "https://weather-ui-r7xp.vercel.app/Kolkata",
+        url: `${frontendUrl}/Kolkata`,
         icon: Map,
     },
     {
         title: "Hyderabad",
-        url: "https://weather-ui-r7xp.vercel.app/Hyderabad",
+        url: `${frontendUrl}/Hyderabad`,
         icon: Earth,
     },
 ];

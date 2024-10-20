@@ -11,13 +11,14 @@ export function WeatherCard() {
 
     const [data, setData] = useState<any>({});
     const [loading, setLoading] = useState<boolean>(true);
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true);
             try {
                 const res = await fetch(
-                    `https://weather-monitoring-system-dpv9.onrender.com/api/weather/current?city=${city}`
+                    `${backendUrl}/api/weather/current?city=${city}`
                 );
                 if (!res.ok) {
                     throw new Error("Failed to fetch data");
