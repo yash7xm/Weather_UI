@@ -6,7 +6,7 @@ export function Home() {
     return (
         <SidebarProvider>
             <AppSidebar />
-            <main>
+            <main className="w-full">
                 <SidebarTrigger />
                 <Weather />
             </main>
